@@ -5,6 +5,8 @@ This code, can simulate any type of DSMC problem, with a structured mesh approac
 
 Results are exported in .dat format, best suited for post-processing with Tecplot.
 
+
+
 -----Debuging compile command-----
 ifort -i4 -r8 -O0 -g -debug all -traceback -check bounds -fp-model source -debug inline-debug-info -zero -assume nounderscore dsmc_check.f90 dsmc_initialization.f90 dsmc_drifting.f90 dsmc_boundaries.f90 dsmc_indexing.f90 dsmc_collision.f90 dsmc_sampling.f90 dsmc_output.f90 dsmc3D.f90
 
